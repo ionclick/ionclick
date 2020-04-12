@@ -1,1 +1,13 @@
-theme: jekyll-theme-minimal
+atom:
+  buildCommand:
+    - jekyll
+    - build
+    - --option
+    - --this
+  buildEnv:
+    JEKYLL_ENV: development
+  postDirs:
+    - _newsletters
+    - _posts
+  defaultPostDir: _drafts
+  theme: jekyll-theme-minimal
